@@ -4,7 +4,7 @@ export function useMovies(query, callBack) {
   const [movies, setMovies] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState("");
-  const API_LINK = `http://www.omdbapi.com/?i=tt3896198&apikey=${KEY}&s=${query}`;
+  const API_LINK = `https://www.omdbapi.com/?i=tt3896198&apikey=${KEY}&s=${query}`;
 
   useEffect(
     function () {
